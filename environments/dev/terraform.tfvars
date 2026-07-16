@@ -1,8 +1,8 @@
 aws_region     = "us-east-1"
-aws_access_key = "AKIASC75U3O2TB3PXA5I"
-aws_secret_key = "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"
+aws_access_key = "AKIASC75U3O2XIZJKNFI"
+aws_secret_key = "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"
 
-bucket_name = "hussshehata"
+bucket_name = "pulse-e"
 db_password = "Pul$e2026"
 
 # EC2 instance variables

@@ -27,26 +27,26 @@
 #   sensitive = true
 # }
 
-output "mysql_database_endpoint" {
-  value = module.rds_mysql.database_endpoint
-}
+# output "mysql_database_endpoint" {
+#   value = module.rds_mysql.database_endpoint
+# }
 
-output "mysql_database_port" {
-  value = module.rds_mysql.database_port
-}
+# output "mysql_database_port" {
+#   value = module.rds_mysql.database_port
+# }
 
-output "mysql_database_name" {
-  value = module.rds_mysql.database_name
-}
+# output "mysql_database_name" {
+#   value = module.rds_mysql.database_name
+# }
 
-output "mysql_database_username" {
-  value = module.rds_mysql.database_username
-}
+# output "mysql_database_username" {
+#   value = module.rds_mysql.database_username
+# }
 
-output "mysql_database_connection_url" {
-  value     = module.rds_mysql.connection_url
-  sensitive = true
-}
+# output "mysql_database_connection_url" {
+#   value     = module.rds_mysql.connection_url
+#   sensitive = true
+# }
 
 
 # # ec2 instance output

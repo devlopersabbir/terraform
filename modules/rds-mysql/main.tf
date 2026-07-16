@@ -43,7 +43,7 @@ resource "aws_db_subnet_group" "mysql" {
 }
 
 resource "aws_db_instance" "mysql" {
-  identifier     = "huss-mysql-database"
+  identifier     = "mysql-database"
   engine         = "mysql"
   engine_version = "8.0"
   instance_class = var.db_instance_class

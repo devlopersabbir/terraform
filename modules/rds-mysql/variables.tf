@@ -1,13 +1,13 @@
 variable "db_name" {
   description = "Initial database name"
   type        = string
-  default     = "huss"
+  default     = "pulse"
 }
 
 variable "db_username" {
   description = "Database username"
   type        = string
-  default     = "huss"
+  default     = "pulse"
 }
 
 variable "db_password" {

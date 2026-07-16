@@ -16,5 +16,5 @@ output "database_username" {
 
 output "connection_url" {
   value     = "mysql://${var.db_username}:${var.db_password}@${aws_db_instance.mysql.endpoint}/${var.db_name}"
-  sensitive = true
+  sensitive = false 
 }

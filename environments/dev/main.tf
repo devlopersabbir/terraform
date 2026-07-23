@@ -27,7 +27,6 @@ module "s3" {
 
 # module "ec2" {
 #   source = "../../modules/ec2"
-
 #   instance_name    = var.instance_name
 #   instance_type    = var.instance_type
 #   ssh_key_name     = var.ssh_key_name

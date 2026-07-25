@@ -43,7 +43,7 @@ resource "aws_db_subnet_group" "postgres" {
 }
 
 resource "aws_db_instance" "postgres" {
-  identifier     = "huss-database"
+  identifier     = "postgres-db"
   engine         = "postgres"
   engine_version = "17.5"
   instance_class = var.db_instance_class

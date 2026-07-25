@@ -1,18 +1,18 @@
-# module "s3" {
-#   source      = "../../modules/s3"
-#   bucket_name = var.bucket_name
-#   environment = "Dev"
-# }
+module "s3" {
+  source      = "../../modules/s3"
+  bucket_name = var.bucket_name
+  environment = "Dev"
+}
 
-# module "rds_postgres" {
-#   source               = "../../modules/rds-postgres"
-#   db_name              = var.db_name
-#   db_username          = var.db_username
-#   db_password          = var.db_password
-#   db_instance_class    = var.db_instance_class
-#   db_allocated_storage = var.db_allocated_storage
-#   allowed_ip           = var.allowed_ip
-# }
+module "rds_postgres" {
+  source               = "../../modules/rds-postgres"
+  db_name              = var.db_name
+  db_username          = var.db_username
+  db_password          = var.db_password
+  db_instance_class    = var.db_instance_class
+  db_allocated_storage = var.db_allocated_storage
+  allowed_ip           = var.allowed_ip
+}
 
 # module "rds_mysql" {
 #   source               = "../../modules/rds-mysql"

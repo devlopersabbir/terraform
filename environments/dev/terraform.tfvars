@@ -1,8 +1,8 @@
 aws_region     = "eu-north-1"
 aws_profile    = "christian"
 
-bucket_name = "christian"
-db_password = "Chr!st!@n"
+bucket_name = "christian-bucketstorage"
+db_password = "Chr!St!N"
 
 # EC2 instance variables
 instance_type    = "t3.micro"

@@ -19,13 +19,13 @@ variable "allowed_cidr" {
 variable "max_storage_gb" {
   description = "Maximum data storage in GB (cost guardrail)"
   type        = number
-  default     = 5
+  default     = 1
 }
 
 variable "max_ecpu_per_second" {
   description = "Maximum ECPUs per second (cost guardrail)"
   type        = number
-  default     = 5000
+  default     = 1000
 }
 
 variable "snapshot_retention_limit" {

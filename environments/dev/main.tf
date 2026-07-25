@@ -1,8 +1,8 @@
-module "s3" {
-  source      = "../../modules/s3"
-  bucket_name = var.bucket_name
-  environment = "Dev"
-}
+# module "s3" {
+#   source      = "../../modules/s3"
+#   bucket_name = var.bucket_name
+#   environment = "Dev"
+# }
 
 # module "rds_postgres" {
 #   source               = "../../modules/rds-postgres"
@@ -34,8 +34,8 @@ module "s3" {
 #   root_volume_size = var.root_volume_size
 # }
 
-# module "elasticache" {
-#   source      = "../../modules/elasticache"
-#   cache_name  = var.valkey_cache_name
-#   environment = "Dev"
-# }
+module "elasticache" {
+  source      = "../../modules/elasticache"
+  cache_name  = var.valkey_cache_name
+  environment = "Dev"
+}

@@ -25,7 +25,7 @@ variable "db_instance_class" {
 variable "db_allocated_storage" {
   description = "Storage in GB"
   type        = number
-  default     = 15
+  default     = 20
 }
 
 variable "allowed_ip" {

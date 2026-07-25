@@ -13,3 +13,4 @@ environments/prod/terraform.tfstate.*.backup
 environments/prod/*.log
 
 *.tfvars
+environments/dev/terraform.tfvars

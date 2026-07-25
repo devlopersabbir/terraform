@@ -47,9 +47,22 @@ resource "aws_s3_bucket_server_side_encryption_configuration" "this" {
   }
 }
 
-# Enable public access so that user can get access bucket object from anywhere
+# Disable "Block all public access" — required before a public bucket policy can be applied
+resource "aws_s3_bucket_public_access_block" "this" {
+  bucket = aws_s3_bucket.this.id
+
+  block_public_acls       = false
+  block_public_policy     = false
+  ignore_public_acls      = false
+  restrict_public_buckets = false
+}
+
+# Public read bucket policy — allows anyone to GET objects from the bucket
+# depends_on ensures Block Public Access is disabled first
 resource "aws_s3_bucket_policy" "this" {
   bucket = aws_s3_bucket.this.id
+
+  depends_on = [aws_s3_bucket_public_access_block.this]
 
   policy = jsonencode({
     Version = "2012-10-17"

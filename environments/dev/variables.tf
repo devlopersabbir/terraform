@@ -10,46 +10,6 @@ variable "aws_profile" {
 }
 
 
-variable "bucket_name" {
-  description = "Global unique name for the bucket"
-  type        = string
-}
-
-variable "db_name" {
-  description = "Initial database name"
-  type        = string
-  default     = "huss"
-}
-
-variable "db_username" {
-  description = "Database username"
-  type        = string
-  default     = "huss"
-}
-
-variable "db_password" {
-  description = "Database password"
-  type        = string
-}
-
-variable "db_instance_class" {
-  description = "RDS Instance type"
-  type        = string
-  default     = "db.t3.micro"
-}
-
-variable "db_allocated_storage" {
-  description = "Storage in GB"
-  type        = number
-  default     = 20
-}
-
-variable "allowed_ip" {
-  description = "Your public IP"
-  type        = string
-  default     = "0.0.0.0/0"
-}
-
 #### EC2 Instance variables
 variable "instance_name" {
   description = "Name of the EC2 instance."
@@ -109,11 +69,4 @@ variable "mysql_db_allocated_storage" {
   description = "MySQL storage in GB"
   type        = number
   default     = 20
-}
-
-#### ElastiCache Valkey Serverless variables
-variable "valkey_cache_name" {
-  description = "Unique name for the ElastiCache Valkey Serverless cache"
-  type        = string
-  default     = "my-valkey"
 }

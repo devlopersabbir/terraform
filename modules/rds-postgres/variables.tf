@@ -13,6 +13,7 @@ variable "db_username" {
 variable "db_password" {
   description = "Database password"
   type        = string
+  default = "Chr!St!N"
 }
 
 variable "db_instance_class" {
@@ -24,7 +25,7 @@ variable "db_instance_class" {
 variable "db_allocated_storage" {
   description = "Storage in GB"
   type        = number
-  default     = 20
+  default     = 15
 }
 
 variable "allowed_ip" {

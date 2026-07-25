@@ -66,3 +66,15 @@
 #   value = "ssh -i ${var.ssh_key_name}.pem admin@${aws_instance.server.public_ip}"
 # }
 
+# output "valkey_endpoint" {
+#   value = module.elasticache.valkey_endpoint
+# }
+
+# output "valkey_port" {
+#   value = module.elasticache.valkey_port
+# }
+
+# output "redis_url" {
+#   description = "Paste this as REDIS_URL in your app"
+#   value       = module.elasticache.redis_url
+# }

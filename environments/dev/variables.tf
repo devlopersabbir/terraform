@@ -121,3 +121,9 @@ variable "mysql_db_allocated_storage" {
   default     = 20
 }
 
+#### ElastiCache Valkey Serverless variables
+variable "valkey_cache_name" {
+  description = "Unique name for the ElastiCache Valkey Serverless cache"
+  type        = string
+  default     = "my-valkey"
+}

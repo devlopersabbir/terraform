@@ -33,3 +33,9 @@ module "s3" {
 #   allowed_ssh_ip   = var.allowed_ssh_ip
 #   root_volume_size = var.root_volume_size
 # }
+
+# module "elasticache" {
+#   source      = "../../modules/elasticache"
+#   cache_name  = var.valkey_cache_name
+#   environment = "Dev"
+# }

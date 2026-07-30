@@ -14,6 +14,7 @@ variable "instance_type" {
 variable "ssh_key_name" {
   description = "Existing aws key pair name"
   type        = string
+  default = "tprice34.pem"
 }
 
 variable "allowed_ssh_ip" {

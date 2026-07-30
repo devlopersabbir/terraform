@@ -1,12 +1,18 @@
 module "s3" {
-  source      = "../../modules/s3"
+  source = "../../modules/s3"
 }
+
 module "rds_postgres" {
-  source               = "../../modules/rds-postgres"
+  source = "../../modules/rds-postgres"
 }
+
 module "elasticache" {
-  source      = "../../modules/elasticache"
+  source = "../../modules/elasticache"
 }
+module "ec2" {
+  source = "../../modules/ec2"
+}
+
 
 # module "rds_mysql" {
 #   source               = "../../modules/rds-mysql"
@@ -18,13 +24,4 @@ module "elasticache" {
 #   allowed_ip           = var.allowed_ip
 # }
 
-
-# module "ec2" {
-#   source = "../../modules/ec2"
-#   instance_name    = var.instance_name
-#   instance_type    = var.instance_type
-#   ssh_key_name     = var.ssh_key_name
-#   allowed_ssh_ip   = var.allowed_ssh_ip
-#   root_volume_size = var.root_volume_size
-# }
 
